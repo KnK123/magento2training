@@ -1,0 +1,60 @@
+.codeView {
+    height: calc(100% - 65px);
+    width: 50%;
+    font-size: 0.8vw;
+    padding-top: 5px;
+    padding-left: 7px;
+}
+
+.codeView :global(.js-highlight) {
+    overflow-x: scroll;
+    margin-top: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.instructions {
+    overflow-x: scroll;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0 10px;
+    height: 100%;
+}
+
+.instructionsWrapper {
+    height: calc(100% - 65px);
+    width: 50%;
+}
+
+.instructions :global(h1) {
+    font-size: 2em;
+}
+
+.instructions :global(code) {
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+.instructions :global(h2) {
+    font-weight: 300;
+}
+
+.instructions :global(em) {
+    color: #717171;
+    font-size: 0.8em;
+}
+
+.instructions :global(code) {
+    background-color: rgba(27, 31, 35, 0.05);
+    border-radius: 3px;
+    margin: 0;
+    padding: 0.2em 0.4em;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier,
+        monospace;
+    font-size: 80%;
+    pointer-events: none;
+}
